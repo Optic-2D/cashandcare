@@ -41,94 +41,7 @@
 								<li><a href="contact.html".html">Contact</a></li>
 							</ul>
 						</nav>
-						<section class="contact-section">
-							<div class="contact-container">
-							  <h2>Send us an Email!</h2>
-							  <form id="contactForm">
-								<input type="email" id="email" placeholder="Your Email" required>
-								<textarea id="message" rows="5" placeholder="Your Message" required></textarea>
-								<button type="submit">Send Message</button>
-							  </form>
-							  <div class="success-message" id="successMessage">
-								✅ Thanks for reaching out! Please send the email that just opened.
-							  </div>
-							</div>
-						  </section>
-						  
-						  <style>
-						  .contact-section {
-							padding: 60px 20px;
-							background-color: #f9f9f9;
-						  }
-						  
-						  .contact-container {
-							max-width: 800px;
-							margin: 0 auto;
-							background: #fff;
-							padding: 40px;
-							border: 1px solid #ddd;
-						  }
-						  
-						  .contact-container h2 {
-							margin-bottom: 10px;
-							font-size: 2rem;
-						  }
-						  
-						  .contact-container p {
-							margin-bottom: 30px;
-							color: #666;
-						  }
-						  
-						  #contactForm input[type="email"],
-						  #contactForm textarea {
-							width: 100%;
-							padding: 15px;
-							margin-bottom: 20px;
-							border: 1px solid #ccc;
-							font-size: 1rem;
-						  }
-						  
-						  #contactForm button {
-							width: 100%;
-							padding: 15px;
-							background: #000;
-							color: #fff;
-							border: none;
-							font-size: 1rem;
-							cursor: pointer;
-						  }
-						  
-						  #contactForm button:hover {
-							background: #333;
-						  }
-						  
-						  .success-message {
-							margin-top: 20px;
-							color: green;
-							font-weight: bold;
-							display: none;
-						  }
-						  </style>
-						  
-						  <script>
-						  const form = document.getElementById('contactForm');
-						  const successMessage = document.getElementById('successMessage');
-						  
-						  form.addEventListener('submit', function(event) {
-							event.preventDefault();
-						  
-							const email = document.getElementById('email').value;
-							const message = document.getElementById('message').value;
-						  
-							const subject = encodeURIComponent('New Message from Website');
-							const body = encodeURIComponent(`Email: ${email}\n\nMessage:\n${message}`);
-						  
-							window.location.href = `mailto:cashandcareofficial@gmail.com?subject=${subject}&body=${body}`;
-						  
-							successMessage.style.display = 'block';
-						  });
-						  </script>
-						  
+
 
 			<!-- Footer -->
 				<div id="footer">
@@ -152,6 +65,7 @@
 											<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 											<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
 											<li><a href="#" class="icon brands fa-tiktok"><span class="label">Tiktok</span></a></li>
+											<li><a href="#" class="icon brands fa-mail"><span class="label">Email</span></a></li>
 										</ul>
 									</section>
 
