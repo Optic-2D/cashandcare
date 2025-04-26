@@ -1,0 +1,213 @@
+<!DOCTYPE HTML>
+<!--
+	Helios by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Contact Cash and Care</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li>
+									<a href="#">Learn</a>
+									<ul>
+										<li><a href="#">Beginner</a></li>
+										<li><a href="#">Intermediate</a></li>
+										<li><a href="#">Advanced</a></li>
+										<li>
+											<a href="#">My Journey &hellip;</a>
+											<ul>
+												<li><a href="#">First Week</a></li>
+												<li><a href="#">Second Week</a></li>
+												<li><a href="#">Third Week</a></li>
+												<li><a href="#">Fourth Week</a></li>
+											</ul>
+										</li>
+										<li><a href="#">More Options</a></li>
+									</ul>
+								</li>
+								<li><a href="about.html">About</a></li>
+								<li><a href="contact.html".html">Contact</a></li>
+							</ul>
+						</nav>
+						<section class="contact-section">
+							<div class="contact-container">
+							  <h2>Send us an email!</h2>
+							  <p>We'd love to hear from you!  Scroll down for more!</p>
+							  <form id="contactForm">
+								<input type="email" id="email" placeholder="Your Email" required>
+								<textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+								<button type="submit">Send Message</button>
+							  </form>
+							  <div class="success-message" id="successMessage">
+								✅ Thanks for reaching out! Please send the email that just opened.
+							  </div>
+							</div>
+						  </section>
+						  
+						  <style>
+						  /* Base styles (Mobile-first) */
+						  .contact-section {
+							padding: 60px 16px;
+							background-color: #fafafa;
+						  }
+						  
+						  .contact-container {
+							width: 100%;
+							max-width: 700px;
+							margin: 0 auto;
+							padding: 40px 24px;
+							background: #fff;
+							border: 1px solid #e0e0e0;
+							box-sizing: border-box;
+						  }
+						  
+						  .contact-container h2 {
+							margin-bottom: 16px;
+							font-size: 1.8rem;
+							text-align: center;
+						  }
+						  
+						  .contact-container p {
+							margin-bottom: 32px;
+							color: #666;
+							text-align: center;
+							font-size: 1rem;
+						  }
+						  
+						  #contactForm input[type="email"],
+						  #contactForm textarea {
+							width: 100%;
+							padding: 14px 12px;
+							margin-bottom: 20px;
+							border: 1px solid #ccc;
+							font-size: 1rem;
+							box-sizing: border-box;
+						  }
+						  
+						  #contactForm button {
+							width: 100%;
+							padding: 14px;
+							background: #000;
+							color: #fff;
+							border: none;
+							font-size: 1rem;
+							cursor: pointer;
+							transition: background 0.3s ease;
+						  }
+						  
+						  #contactForm button:hover {
+							background: #333;
+						  }
+						  
+						  .success-message {
+							margin-top: 24px;
+							color: green;
+							font-weight: bold;
+							text-align: center;
+							display: none;
+						  }
+						  
+						  /* Larger screen improvements */
+						  @media (min-width: 768px) {
+							.contact-section {
+							  padding: 80px 32px;
+							}
+							
+							.contact-container {
+							  padding: 60px 40px;
+							}
+						  
+							.contact-container h2 {
+							  font-size: 2.2rem;
+							}
+						  
+							.contact-container p {
+							  font-size: 1.1rem;
+							}
+						  }
+						  </style>
+						  
+						  <script>
+						  const form = document.getElementById('contactForm');
+						  const successMessage = document.getElementById('successMessage');
+						  
+						  form.addEventListener('submit', function(event) {
+							event.preventDefault();
+						  
+							const email = document.getElementById('email').value;
+							const message = document.getElementById('message').value;
+						  
+							const subject = encodeURIComponent('New Message from Website');
+							const body = encodeURIComponent(`Email: ${email}\n\nMessage:\n${message}`);
+						  
+							window.location.href = `mailto:cashandcareofficial@gmail.com?subject=${subject}&body=${body}`;
+						  
+							successMessage.style.display = 'block';
+						  });
+						  </script>
+						  
+
+			<!-- Footer -->
+				<div id="footer">
+					<div class="container">
+						<div class="row">
+
+							
+
+						</div>
+						<hr />
+						<div class="row">
+							<div class="col-12">
+
+								<!-- Contact -->
+									<section class="contact">
+										<header>
+											<h3>Dont wanna email?</h3>
+										</header>
+										<p>Reach out to us on our other socials!</p>
+										<ul class="icons">
+											<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+											<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+											<li><a href="#" class="icon brands fa-tiktok"><span class="label">Tiktok</span></a></li>
+										</ul>
+									</section>
+
+								<!-- Copyright -->
+									<div class="copyright">
+										<ul class="menu">
+											<li>&copy; Cash and Care. All rights reserved.</li>
+										</ul>
+									</div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
