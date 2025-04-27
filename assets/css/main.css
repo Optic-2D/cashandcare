@@ -1943,7 +1943,7 @@ input, select, textarea {
 	form label {
 		display: block;
 		font-weight: 400;
-		color: #0b40d3;
+		color: #0e3ab3;
 		margin: 0 0 1em 0;
 	}
 
@@ -2055,7 +2055,7 @@ input, select, textarea {
 	.button {
 		position: relative;
 		display: inline-block;
-		background: #06b7e4;
+		background: #035d74;
 		color: #fff;
 		text-align: center;
 		border-radius: 0.5em;
@@ -2085,7 +2085,7 @@ input, select, textarea {
 		input[type="reset"].alt,
 		button.alt,
 		.button.alt {
-			background: #022ce9;
+			background: #030d3b;
 		}
 
 			input[type="button"].alt:hover,
@@ -2093,7 +2093,7 @@ input, select, textarea {
 			input[type="reset"].alt:hover,
 			button.alt:hover,
 			.button.alt:hover {
-				background: #022ce9;
+				background: #030d3b;
 			}
 
 /* Post */
@@ -2146,7 +2146,7 @@ input, select, textarea {
 		.icon.circled {
 			position: relative;
 			display: inline-block;
-			background: #022ce9;
+			background: #030d3b;
 			color: #fff;
 			border-radius: 100%;
 			width: 3em;
@@ -2257,7 +2257,7 @@ input, select, textarea {
 
 		body.homepage #header:after {
 			content: '';
-			background: #022ce9;
+			background: #030d3b;
 			display: block;
 			position: absolute;
 			left: 0;
