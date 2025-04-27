@@ -2085,7 +2085,7 @@ input, select, textarea {
 		input[type="reset"].alt,
 		button.alt,
 		.button.alt {
-			background: #2B252C;
+			background: #022ce9;
 		}
 
 			input[type="button"].alt:hover,
