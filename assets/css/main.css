@@ -2085,7 +2085,7 @@ input, select, textarea {
 		input[type="reset"].alt,
 		button.alt,
 		.button.alt {
-			background: #030d3b;
+			background: #031d3b;
 		}
 
 			input[type="button"].alt:hover,
@@ -2093,7 +2093,7 @@ input, select, textarea {
 			input[type="reset"].alt:hover,
 			button.alt:hover,
 			.button.alt:hover {
-				background: #030d3b;
+				background: #031d3b;
 			}
 
 /* Post */
@@ -2146,7 +2146,7 @@ input, select, textarea {
 		.icon.circled {
 			position: relative;
 			display: inline-block;
-			background: #030d3b;
+			background: #031d3b;
 			color: #fff;
 			border-radius: 100%;
 			width: 3em;
@@ -2257,7 +2257,7 @@ input, select, textarea {
 
 		body.homepage #header:after {
 			content: '';
-			background: #030d3b;
+			background: #031d3b;
 			display: block;
 			position: absolute;
 			left: 0;
