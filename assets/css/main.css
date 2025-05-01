@@ -2085,7 +2085,7 @@ input, select, textarea {
 		input[type="reset"].alt,
 		button.alt,
 		.button.alt {
-			background: #5D707F;
+			background: #5d707f;
 		}
 
 			input[type="button"].alt:hover,
@@ -2176,7 +2176,6 @@ input, select, textarea {
 
 	#header {
 		position: relative;
-		background-image: url("../../images/header.jpg");
 		background-size: cover;
 		background-position: center center;
 		background-attachment: fixed;
