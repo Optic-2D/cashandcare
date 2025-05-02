@@ -28,53 +28,84 @@
       </ul>
     </nav>
 
-    <!-- Contact Section -->
-    <section class="contact-section">
-      <div class="contact-container">
-        <h2>Send us an email!</h2>
-        <p>We'd love to hear from you! Scroll down for more!</p>
-        <form id="contactForm">
-          <input type="email" id="email" placeholder="Your Email" required>
-          <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
-          <button type="submit">Send Message</button>
-        </form>
-        <div class="success-message" id="successMessage">
-          ✅ Thanks for reaching out! Please send the email that just opened.
-        </div>
+<!-- Footer -->
+<div id="footer">
+  <div class="container">
+    <div class="row">
+
+      <!-- Socials Column -->
+      <div class="col-6 col-12-medium">
+        <section class="contact">
+          <header>
+            <h3>Don't wanna email?</h3>
+          </header>
+          <p>Reach out to us on our other socials!</p>
+          <ul class="icons">
+            <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+            <li><a href="#" class="icon brands fa-tiktok"><span class="label">Tiktok</span></a></li>
+          </ul>
+        </section>
       </div>
-    </section>
 
-    <!-- Footer -->
-    <div id="footer">
-      <div class="container">
-        <div class="row"></div>
-        <hr />
-        <div class="row">
-          <div class="col-12">
-            <!-- Contact -->
-            <section class="contact">
-              <header>
-                <h3>Don't wanna email?</h3>
-              </header>
-              <p>Reach out to us on our other socials!</p>
-              <ul class="icons">
-                <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-                <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-                <li><a href="#" class="icon brands fa-tiktok"><span class="label">Tiktok</span></a></li>
-              </ul>
-            </section>
+      <!-- Email Form Column -->
+      <div class="col-6 col-12-medium" style="display: flex; justify-content: flex-end; align-items: center;">
+        <section class="contact" style="width: 100%; max-width: 300px;">
+          <header>
+            <h3>Send us an email</h3>
+          </header>
+          <form id="quickEmailForm">
+            <input type="email" id="quickEmail" placeholder="Your Email" required />
+          </form>
+        </section>
+      </div>
 
-            <!-- Copyright -->
-            <div class="copyright">
-              <ul class="menu">
-                <li>&copy; Cash and Care. All rights reserved.</li>
-              </ul>
-            </div>
+    </div>
 
-          </div>
+    <hr />
+    <div class="row">
+      <div class="col-12">
+        <div class="copyright">
+          <ul class="menu">
+            <li>&copy; Cash and Care. All rights reserved.</li>
+          </ul>
         </div>
       </div>
     </div>
+  </div>
+</div>
+
+<style>
+  #quickEmailForm input[type="email"] {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    box-sizing: border-box;
+    outline: none;
+    background: #404E5C; /* Payne's grey */
+    color: #fff;
+    transition: border-color 0.3s ease;
+  }
+
+  #quickEmailForm input[type="email"]::placeholder {
+    color: #ddd;
+  }
+
+  #quickEmailForm input[type="email"]:focus {
+    border-color: #fff;
+  }
+</style>
+
+<script>
+  // Optional: open email client when pressing Enter
+  document.getElementById('quickEmailForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const email = document.getElementById('quickEmail').value;
+    window.location.href = `mailto:cashandcareofficial@gmail.com?subject=Subscribe&body=My email: ${email}`;
+  });
+</script>
 
   </div>
 
@@ -88,113 +119,4 @@
   <script src="assets/js/util.js"></script>
   <script src="assets/js/main.js"></script>
 
-  <!-- Contact Form Script -->
-  <script>
-    const form = document.getElementById('contactForm');
-    const successMessage = document.getElementById('successMessage');
-
-    form.addEventListener('submit', function(event) {
-      event.preventDefault();
-
-      const email = document.getElementById('email').value;
-      const message = document.getElementById('message').value;
-
-      const subject = encodeURIComponent('New Message from Website');
-      const body = encodeURIComponent(`Email: ${email}\n\nMessage:\n${message}`);
-
-      window.location.href = `mailto:cashandcareofficial@gmail.com?subject=${subject}&body=${body}`;
-
-      successMessage.style.display = 'block';
-    });
-  </script>
-
-  <!-- Cleaned Styles -->
-  <style>
-    /* Contact Section */
-    .contact-section {
-      padding: 4rem 1rem 1rem 1rem; /* Top Right Bottom Left */
-      background-color: #fafafa;
-    }
-
-    .contact-container {
-      width: 100%;
-      max-width: 700px;
-      margin: 0 auto;
-      padding: 3rem 2rem;
-      background: #fff;
-      border: 1px solid #e0e0e0;
-      box-sizing: border-box;
-    }
-
-    .contact-container h2 {
-      margin-bottom: 1rem;
-      font-size: 2rem;
-      text-align: center;
-    }
-
-    .contact-container p {
-      margin-bottom: 2rem;
-      color: #666;
-      text-align: center;
-      font-size: 1.1rem;
-    }
-
-    #contactForm input[type="email"],
-    #contactForm textarea {
-      width: 100%;
-      padding: 14px;
-      margin-bottom: 1.5rem;
-      border: 1px solid #ccc;
-      font-size: 1rem;
-      box-sizing: border-box;
-    }
-
-    #contactForm button {
-      width: 100%;
-      padding: 14px;
-      background: #000;
-      color: #fff;
-      border: none;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
-
-    #contactForm button:hover {
-      background: #333;
-    }
-
-    .success-message {
-      margin-top: 1.5rem;
-      color: green;
-      font-weight: bold;
-      text-align: center;
-      display: none;
-    }
-
-    /* Footer Margin Fix */
-    #footer {
-      padding-top: 2rem;
-    }
-
-    /* Larger Screen Improvements */
-    @media (min-width: 768px) {
-      .contact-section {
-        padding: 5rem 2rem 2rem 2rem;
-      }
-
-      .contact-container {
-        padding: 4rem 3rem;
-      }
-
-      .contact-container h2 {
-        font-size: 2.4rem;
-      }
-
-      .contact-container p {
-        font-size: 1.2rem;
-      }
-    }
-  </style>
-</body>
 </html>
