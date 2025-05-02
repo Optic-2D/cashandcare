@@ -48,7 +48,7 @@
       <div class="col-6 col-12-medium">
         <section class="contact" style="padding: 0 16px; display: flex; flex-direction: column; align-items: flex-end;">
           <form id="quickEmailForm" style="width: 100%; max-width: 280px;">
-            <input type="email" id="quickEmail" placeholder="Send us an email" required />
+            <input type="email" id="quickEmail" placeholder="email us!" required />
           </form>
         </section>
       </div>
@@ -80,14 +80,14 @@
     font-family: 'Inter', sans-serif;
     box-sizing: border-box;
     outline: none;
-    background: #404E5C; /* Payne's grey */
+    background: #2A242D;
     color: #fff;
     transition: all 0.3s ease;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   }
 
   #quickEmailForm input[type="email"]::placeholder {
-    color: #e0e0e0; /* Lighter for better contrast */
+    color: #ffffff;
     font-weight: 400;
   }
 
@@ -100,8 +100,17 @@
   }
 
   .icons a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #2A242D;
+    color: #fff;
+    font-size: 18px;
     transition: transform 0.2s ease, color 0.2s ease;
-    font-family: 'Inter', sans-serif;
+    text-decoration: none;
   }
 
   .icons a:hover {
