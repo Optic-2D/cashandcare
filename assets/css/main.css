@@ -1141,7 +1141,7 @@ input, select, textarea {
 				}
 
 				.row > .col-12-narrow {
-					width: 100%;
+        width: 100%;
 				}
 
 				.row > .off-12-narrow {
@@ -1154,7 +1154,7 @@ input, select, textarea {
 				}
 
 					.row.gtr-0 > * {
-						padding: 0px 0 0 0px;
+						padding: 0px 0 0 0px
 					}
 
 					.row.gtr-0.gtr-uniform {
@@ -1505,12 +1505,12 @@ input, select, textarea {
 				box-sizing: border-box;
 				align-items: stretch;
 			}
-
-				.row > * {
+      .row > * {
 					box-sizing: border-box;
 				}
 
 				.row.gtr-uniform > * > :last-child {
+
 					margin-bottom: 0;
 				}
 
@@ -2055,7 +2055,7 @@ input, select, textarea {
 	.button {
 		position: relative;
 		display: inline-block;
-		background: #F4FFF8;
+		background: #220C10;
 		color: #fff;
 		text-align: center;
 		border-radius: 0.5em;
